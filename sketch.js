@@ -100,12 +100,12 @@ function createTree(){
     trnd=random(100,300);
     var tree=createSprite(width+40,height-70,40,100);
     tree.velocityX=-1;
-    tree.lifetime=1000;
+    tree.lifetime=width * 2;
     var r=random(0,20);
     var rr=random(0,360);
     var apple=createSprite(tree.x+sin(rr)*r,tree.y-25+cos(rr)*r,5,5);
     apple.velocityX=-1;
-    apple.lifetime=1000;
+    apple.lifetime=width * 2;
     apple.shapeColor="#ff0000";
     apples.add(apple);
     tree.addImage(treeI)
